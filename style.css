@@ -54,7 +54,7 @@ html p{
 }
 
 .jumbotron{
-    background: url(project1/image/jumbo.jpg) no-repeat center;
+    background: url(image/jumbo.webp) no-repeat center;
     background-size: cover;
     width: 100%;
     
