@@ -1,0 +1,102 @@
+html p{
+    font-size: 0.6r em;
+}
+
+
+.navbar{
+    background-color: #E6E0D3;
+    height: 70px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-brand{
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.2s color;
+}
+
+.nav-link{
+    color: #070F18;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+
+@media(min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.jumbotron{
+    background: url(project1/image/jumbo.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    
+    color: #E6E0D3;
+}
+
+.jumbotron::before{
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+
+.jumbotron .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron h1{
+    font-size: 1.5em;
+}
+
+.jumbotron p{
+    font-size: 0.5em;
+    width: 60%;
+}
+
+.description, .card, .product{
+
+    background-color: #E6E0D3;
+}
+
+.description .container{
+    width: 60%;
+
+}
+
+.description img{
+    width: 200px;
+}
